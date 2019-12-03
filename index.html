@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baker's Helper</title>
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">	
+		
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+		<a class="navbar-brand" href="#">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#featuredRecipes">Featured Recipes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#measurementCalculator">Measurement Converter</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contactUs">Contact Us</a>
+					</li>
+				</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
+			</form>
+		</div>
+	</nav>
+
+	
+	<div class = "main">	
+	
+	
+		<div class="jumbotron" id="firstJumbotron">
+			<h1 class="display-4">Baker's Helper</h1>
+			<p class="lead">Ever found a recipe you're dying to try, but after seeing how they measured their ingredients decided it wasn't worth the effort?</p>
+			<div id="centered">
+			<hr class="my-4">
+			<p>This conversion tool will solve your struggle.</p>
+			<a class="btn btn-primary btn-lg btn-info" href="#measurementCalculator" role="button">Try it</a>
+			</div>
+		</div>
+		
+		<div id="featuredRecipes" class="header">
+			<h2>Browse our Featured Recipes...</h2>
+		</div>
+				
+		<div class="card-deck">
+			<div class="card recipes">
+				<img src="strawberryCake.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Strawberry Cake</h5>
+					<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
+			</div>
+			<div class="card recipes">
+				<img src="brownies.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Brownies</h5>
+					<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				</div>
+			</div>
+			<div class="card recipes">
+				<img src="pie.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Apple Pie</h5>
+					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				</div>
+			</div>
+			
+		</div>			
+				
+				
+	<div id = "measurementCalculator">
+					
+		<div class="header">		
+			<h2>Measurement Converter</h2>			
+		</div>			
+			
+		<div id="intro">
+			<p>It's as easy as pie! First select an ingredient, then simply choose what units you are converting from and to, and enter the measurement from the recipe. </p>
+		</div>	
+	<div class="jumbotron" id="measuringCups">
+		<form>
+			 <div class="row">
+				<div class="col">
+					<div class="alert alert-info" role="alert" id="ingredientHeader">What is your ingredient?</div>
+					<div  class = "errorMessage alert alert-danger" role="alert" id = "ingredientError"></div>
+					<select id = "ingredient" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					        <option value="" disabled selected>Select your ingredient</option>
+						<option value = "flour">All-purpose Flour</option>
+						<option value = "cakeFlour">Cake Flour</option>
+						<option value = "wwFlour">Whole Wheat Flour</option>
+						<option value = "granSugar">Granulated (white) Sugar</option>
+						<option value = "brownSugar">Packed Brown Sugar (light or dark)</option>
+						<option value = "confecSugar">Confectioner's Sugar</option>
+						<option value = "cocoa">Cocoa Powder</option>
+						<option value = "butter">Butter</option>
+				      </select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="alert alert-info" role="alert" id="convertFromHeader">What are you converting from?</div>
+					<div  class = "errorMessage alert alert-danger" role="alert" id = "convertFromError"></div>
+					<select id = "convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					        <option value="" disabled selected>Select your units</option>
+						<option value = "grams">Grams</option>
+						<option value = "ounces">Ounces</option>
+						<option value = "cups">Cups</option>
+				      </select>
+				</div>
+				<div class="col">
+					<div class="alert alert-info" role="alert" id="convertToHeader">What are you converting to?</div>
+					<div  class = "errorMessage alert alert-danger" role="alert" id = "convertToError"></div>
+					<select id = "convertToSection" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						<option value="" disabled selected>Select your units</option>
+						<option value = "grams">Grams</option>
+						<option value = "ounces">Ounces</option>
+						<option value = "cups">Cups</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div id = "enterValueSection" class="col">
+					<div class="alert alert-info" role="alert" id="enteredValueHeader">Enter value here:</div>
+					<div  class = "errorMessage alert alert-danger" role="alert" id = "enteredValueError"></div>
+					<p><input type = "text" class="form-control" id = "enteredValue" placeholder="Input"></p>
+				</div>
+				<div class="col">
+					<fieldset disabled>
+					<div class="alert alert-info" role="alert" id="resultHeader">Result:</div>
+					<p></p>
+					<p><input type = "text" class="form-control" id = "enteredValue" placeholder=""></p>
+					</fieldset>
+				</div>
+			</div>
+			
+			<button type="button" id = "convert" class="btn btn-info">Go!</button>			
+		</form>
+	</div>	
+
+<div id = "contactUs">
+	
+	<div class="header">				
+		<h2 >Contact Us</h2>
+		<p>Have any questions about our content, have a comment, or want to share any recipes of your own? Feel free to drop us a line. We'd love to hear from you!</p>
+	</div>
+
+	<form>
+		 <div class="form-group">
+			<label for="exampleFormControlInput1">Email address</label>
+			<input type="email" class="form-control" id="email" placeholder="name@example.com">
+		</div>
+		<div class="row">
+			<div id = "enterValueSection" class="col">
+				<label>First Name</label>
+				<p><input type = "text" class="form-control" id = "firstName" placeholder=""></p>
+			</div>
+			<div id = "enterValueSection" class="col">
+				<label>Last Name</label>
+				<p><input type = "text" class="form-control" id = "lastName" placeholder=""></p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Subject</label>
+			<input type="text" class="form-control" id="subject"></input>
+		</div>
+		<div class="form-group">
+			<label>Message</label>
+			<textarea class="form-control" id="message" rows="3"></textarea>
+		</div>
+		
+		<button type="button" id = "contactUsSendButton" class="btn btn-info">Send</button>
+		
+	</form>		
+</div>		
+					
+<div id="home">
+	<a href="#">Return to top</a>
+</div>					
+					
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
