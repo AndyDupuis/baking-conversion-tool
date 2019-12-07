@@ -94,8 +94,8 @@
 			 <div class="row">
 				<div class="col">
 					<div class="alert alert-info" role="alert" id="ingredientHeader">What is your ingredient?</div>
-					<div  class = "errorMessage alert alert-danger" role="alert" id = "ingredientError"></div>
-					<select id = "ingredient" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<div  class="errorMessage alert alert-danger measurementError" role="alert" id="ingredientError"></div>
+					<select id="ingredient" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 					        <option value="" disabled selected>Select your ingredient</option>
 						<option value = "flour">All-purpose Flour</option>
 						<option value = "cakeFlour">Cake Flour</option>
@@ -111,8 +111,8 @@
 			<div class="row">
 				<div class="col">
 					<div class="alert alert-info" role="alert" id="convertFromHeader">What are you converting from?</div>
-					<div  class = "errorMessage alert alert-danger" role="alert" id = "convertFromError"></div>
-					<select id = "convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<div  class="errorMessage alert alert-danger measurementError" role="alert" id="convertFromError"></div>
+					<select id="convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 					        <option value="" disabled selected>Select your units</option>
 						<option value = "grams">Grams</option>
 						<option value = "ounces">Ounces</option>
@@ -121,8 +121,8 @@
 				</div>
 				<div class="col">
 					<div class="alert alert-info" role="alert" id="convertToHeader">What are you converting to?</div>
-					<div  class = "errorMessage alert alert-danger" role="alert" id = "convertToError"></div>
-					<select id = "convertToSection" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<div  class="errorMessage alert alert-danger measurementError" role="alert" id="convertToError"></div>
+					<select id="convertToSection" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 						<option value="" disabled selected>Select your units</option>
 						<option value = "grams">Grams</option>
 						<option value = "ounces">Ounces</option>
@@ -131,16 +131,16 @@
 				</div>
 			</div>
 			<div class="row">
-				<div id = "enterValueSection" class="col">
+				<div id="enterValueSection" class="col">
 					<div class="alert alert-info" role="alert" id="enteredValueHeader">Enter value here:</div>
-					<div  class = "errorMessage alert alert-danger" role="alert" id = "enteredValueError"></div>
-					<p><input type = "text" class="form-control" id = "enteredValue" placeholder="Input"></p>
+					<div  class="errorMessage alert alert-danger measurementError" role="alert" id="enteredValueError"></div>
+					<p><input type="text" class="form-control" id="enteredValue" placeholder="Input"></p>
 				</div>
 				<div class="col">
 					<fieldset disabled>
 					<div class="alert alert-info" role="alert" id="resultHeader">Result:</div>
 					<p></p>
-					<p><input type = "text" class="form-control" id = "enteredValue" placeholder=""></p>
+					<p><input type="text" class="form-control" id="enteredValue" placeholder=""></p>
 					</fieldset>
 				</div>
 			</div>
@@ -156,33 +156,36 @@
 		<p>Have any questions about our content, have a comment, or want to share any recipes of your own? Feel free to drop us a line. We'd love to hear from you!</p>
 	</div>
 
-	<form>
-		 <div class="form-group">
-			<label for="exampleFormControlInput1">Email address</label>
-			<input type="email" class="form-control" id="email" placeholder="name@example.com">
-		</div>
-		<div class="row">
-			<div id = "enterValueSection" class="col">
-				<label>First Name</label>
-				<p><input type = "text" class="form-control" id = "firstName" placeholder=""></p>
+		<form>
+			<div id="errorMessage" role="alert"></div>
+			<div id="successMessage" role="alert">Your message has been sent!</div>
+
+			 <div class="form-group">
+				<label for="exampleFormControlInput1">Email address</label>
+				<input type="email" class="form-control" id="email" placeholder="name@example.com">
 			</div>
-			<div id = "enterValueSection" class="col">
-				<label>Last Name</label>
-				<p><input type = "text" class="form-control" id = "lastName" placeholder=""></p>
+			<div class="row">
+				<div class="col">
+					<label>First Name</label>
+					<p><input type="text" class="form-control" id = "firstName"></p>
+				</div>
+				<div class="col">
+					<label>Last Name</label>
+					<p><input type="text" class="form-control" id = "lastName"></p>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<label>Subject</label>
-			<input type="text" class="form-control" id="subject"></input>
-		</div>
-		<div class="form-group">
-			<label>Message</label>
-			<textarea class="form-control" id="message" rows="3"></textarea>
-		</div>
-		
-		<button type="button" id = "contactUsSendButton" class="btn btn-info">Send</button>
-		
-	</form>		
+			<div class="form-group">
+				<label>Subject</label>
+				<input type="text" class="form-control" id="subject"></input>
+			</div>
+			<div class="form-group">
+				<label>Message</label>
+				<textarea class="form-control" id="message" rows="3"></textarea>
+			</div>
+			
+			<button type="button" id="submitButton" class="btn btn-dark">Send</button>
+			
+		</form>		
 </div>		
 					
 <div id="home">

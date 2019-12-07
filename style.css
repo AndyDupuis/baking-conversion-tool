@@ -68,7 +68,7 @@
 			text-align: center;
 		}
 		
-		.alert-danger {
+		.measurementError {
 			display: none;
 		}
 		
@@ -85,6 +85,9 @@
 		form {
 			margin-bottom: 10%;
 			margin-left: 5%;
+		}
+		#successMessage {
+			display: none;
 		}
 
 		#home {
