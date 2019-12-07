@@ -2,35 +2,57 @@
 //currently it thinks that all the fields are not empty strings based on their id, need to set variables first?
 
 
+
+
+
+
 	$("#convertButton").click(function(){
 	
-		if ($("#ingredient").val() == ""){
-				$("#ingredientError").addClass("alert alert-danger");
-				$("#ingredientError").html("Please enter an ingredient.");
-		} else {
-			$("#ingredientError").hide();
-		}
+		//input errors - each input has it's own error message
+			var measurementErrors = 0;
 
-		if ($("#convertFrom").val() == ""){
-				$("#convertFromError").addClass("alert alert-danger");
-				$("#convertFromError").html("This field is required.");
-		} else {
-			$("#convertFromError").hide();
-		}
+			if ($("#ingredient").val() == ""){
+					$("#ingredientError").addClass("alert alert-danger");
+					$("#ingredientError").html("Please enter an ingredient.");
+					$("#ingredientError").show();
+					measurementErrors ++;
+			} else {
+				$("#ingredientError").hide();
+			}
+		
+			if ($("#convertFrom").val() == ""){
+					$("#convertFromError").addClass("alert alert-danger");
+					$("#convertFromError").html("This field is required.");
+					$("#convertFromError").show();
+					measurementErrors ++;
+			} else {
+				$("#convertFromError").hide();
+			}
 
-		if ($("#convertTo").val() == ""){
-				$("#convertToError").addClass("alert alert-danger");
-				$("#convertToError").html("This field is required.");
-		} else {
-			$("#convertToError").hide();
-		}
+			if ($("#convertTo").val() == ""){
+					$("#convertToError").addClass("alert alert-danger");
+					$("#convertToError").html("This field is required.");
+					$("#convertToError").show();
+					measurementErrors ++;
+			} else {
+				$("#convertToError").hide();
+			}
 
-		if ($("#enteredValue").val() == ""){
-				$("#enteredValueError").addClass("alert alert-danger");
-				$("#enteredValueError").html("Please enter a value.");
-		} else {
-			$("#enteredValueError").hide();
-		}
+			if ($("#enteredValue").val() == "" || isNaN($("#enteredValue").val())){
+					$("#enteredValueError").addClass("alert alert-danger");
+					$("#enteredValueError").html("Please enter a number.");
+					$("#enteredValueError").show();
+					measurementErrors ++;
+			} else {
+				$("#enteredValueError").hide();
+			}
+
+		//if 2 or more input errors are displayed, move the form up on the image so that it doesn't flow out of the section
+			if (measurementErrors >= 2) {
+					$("#measuringCups").css("padding-top", "10%");
+			} else {
+				$("#measuringCups").css("padding-top", "");
+			}
 		
 	});
 
