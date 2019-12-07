@@ -1,4 +1,41 @@
 
+//currently it thinks that all the fields are not empty strings based on their id, need to set variables first?
+
+
+	$("#convertButton").click(function(){
+	
+		if ($("#ingredient").val() == ""){
+				$("#ingredientError").addClass("alert alert-danger");
+				$("#ingredientError").html("Please enter an ingredient.");
+		} else {
+			$("#ingredientError").hide();
+		}
+
+		if ($("#convertFrom").val() == ""){
+				$("#convertFromError").addClass("alert alert-danger");
+				$("#convertFromError").html("This field is required.");
+		} else {
+			$("#convertFromError").hide();
+		}
+
+		if ($("#convertTo").val() == ""){
+				$("#convertToError").addClass("alert alert-danger");
+				$("#convertToError").html("This field is required.");
+		} else {
+			$("#convertToError").hide();
+		}
+
+		if ($("#enteredValue").val() == ""){
+				$("#enteredValueError").addClass("alert alert-danger");
+				$("#enteredValueError").html("Please enter a value.");
+		} else {
+			$("#enteredValueError").hide();
+		}
+		
+	});
+
+
+
 
 /*
 var ingredient = "";
@@ -318,7 +355,7 @@ var ingredient = "";
 		}
 	*/	
 
-		function isEmail(email) {
+	function isEmail(email) {
   		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   		return regex.test(email);
 	}

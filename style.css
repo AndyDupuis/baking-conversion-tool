@@ -1,6 +1,4 @@
-.errorMessage {
-			color: red;
-		}
+
 
 		#firstJumbotron {
 			background-image: url('cupcakes.jpg');
@@ -47,6 +45,10 @@
 			max-width: 1000px;
 			font-weight: bold;
 		}
+
+		.alert-danger {
+			font-weight: normal;
+		}
 		
 		#ingredientHeader{
 			width: 28%;
@@ -66,10 +68,6 @@
 		
 		#ingredient {
 			text-align: center;
-		}
-		
-		.measurementError {
-			display: none;
 		}
 		
 		.row {
