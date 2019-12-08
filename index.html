@@ -93,40 +93,81 @@
 		<form>
 			 <div class="row">
 				<div class="col">
-					<div class="alert alert-info" role="alert" id="ingredientHeader">What is your ingredient?</div>
+					<div class="alert alert-info" role="alert" id="ingredientHeader">First, choose an ingredient:</div>
 					<div  class="errorMessage" role="alert" id="ingredientError"></div>
 					<select id="ingredient" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 					    <option value="">Select your ingredient</option>
-						<option value="flour">All-purpose Flour</option>
-						<option value="cakeFlour">Cake Flour</option>
-						<option value="wwFlour">Whole Wheat Flour</option>
-						<option value="granSugar">Granulated (white) Sugar</option>
-						<option value="brownSugar">Packed Brown Sugar (light or dark)</option>
-						<option value="confecSugar">Confectioner's Sugar</option>
-						<option value="cocoa">Cocoa Powder</option>
-						<option value="butter">Butter</option>
-				      </select>
+						<option value="1" id="flour">All-purpose Flour</option>
+						<option value="1" id="cakeFlour">Cake Flour</option>
+						<option value="1" id="wwFlour">Whole Wheat Flour</option>
+						<option value="1" id="granSugar">Granulated (white) Sugar</option>
+						<option value="1" id="brownSugar">Packed Brown Sugar (light or dark)</option>
+						<option value="1" id="confecSugar">Confectioner's Sugar</option>
+						<option value="1" id="cocoa">Cocoa Powder</option>
+						<option value="1" id="groundSpices">Ground Spices</option>
+						<option value="1" id="chocolateChips">Chocolate Chips</option>
+						<option value="1" id="shreddedCoconut">Shredded Coconut</option>
+						<option value="1" id="salt">Salt</option>
+						<option value="1" id="bakingSoda">Baking Soda</option>
+						<option value="1" id="bakingPowder">Baking Powder</option>
+						<option value="2" id="butter">Butter</option>
+						<option value="2" id="milk">Milk</option>
+						<option value="2" id="cream">Cream</option>
+						<option value="2" id="extracts">Extracts</option>
+						<option value="2" id="water">Water</option>
+						<option value="2" id="shortening">Shortening</option>
+						<option value="2" id="oil">Vegetable Oil</option>
+						<option value="2" id="molasses">Molasses</option>
+						<option value="2" id="honey">Honey</option>
+						<option value="2" id="syrup">Syrup</option>
+				    </select>
 				</div>
 			</div>
+
+			<button type="button" id = "choseIngredient" class="btn btn-info">Ok</button>
+			<button disabled type="button" id = "resetIngredient" class="btn btn-info">Reset</button>
+
 			<div class="row">
 				<div class="col">
 					<div class="alert alert-info" role="alert" id="convertFromHeader">What are you converting from?</div>
 					<div  class="errorMessage" role="alert" id="convertFromError"></div>
-					<select id="convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<select disabled id="convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 					    <option value="">Select your units</option>
-						<option value="grams">Grams</option>
-						<option value="ounces">Ounces</option>
-						<option value="cups">Cups</option>
+						<option data-attribute="1" value="grams">Grams</option>
+						<option data-attribute="1" value="ounces">Ounces</option>
+						<option data-attribute="1" value="pounds">Pounds</option>
+						<option data-attribute="1" value="cups">Cups</option>
+						<option data-attribute="1" value="teaspoons">Teaspoons</option>
+						<option data-attribute="1" value="tablespoons">Tablespoons</option>
+						<option data-attribute="2" value="pints">Pints</option>
+						<option data-attribute="2" value="fluidOunces">Fluid Ounces</option>
+						<option data-attribute="2" value="quarts">Quarts</option>
+						<option data-attribute="2" value="cups">Cups</option>
+						<option data-attribute="2" value="teaspoons">Teaspoons</option>
+						<option data-attribute="2" value="tablespoons">Tablespoons</option>
+						<option data-attribute="2" value="liters">Liters</option>
+						<option data-attribute="2" value="milliliters">Milliliters</option>
 				      </select>
 				</div>
 				<div class="col">
 					<div class="alert alert-info" role="alert" id="convertToHeader">What are you converting to?</div>
 					<div  class="errorMessage" role="alert" id="convertToError"></div>
-					<select id="convertTo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+					<select disabled id="convertTo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 						<option value="">Select your units</option>
-						<option value="grams">Grams</option>
-						<option value="ounces">Ounces</option>
-						<option value="cups">Cups</option>
+						<option data-attribute="1" value="grams">Grams</option>
+						<option data-attribute="1" value="ounces">Ounces</option>
+						<option data-attribute="1" value="pounds">Pounds</option>
+						<option data-attribute="1" value="cups">Cups</option>
+						<option data-attribute="1" value="teaspoons">Teaspoons</option>
+						<option data-attribute="1" value="tablespoons">Tablespoons</option>
+						<option data-attribute="2" value="pints">Pints</option>
+						<option data-attribute="2" value="fluidOunces">Fluid Ounces</option>
+						<option data-attribute="2" value="quarts">Quarts</option>
+						<option data-attribute="2" value="cups">Cups</option>
+						<option data-attribute="2" value="teaspoons">Teaspoons</option>
+						<option data-attribute="2" value="tablespoons">Tablespoons</option>
+						<option data-attribute="2" value="liters">Liters</option>
+						<option data-attribute="2" value="milliliters">Milliliters</option>
 					</select>
 				</div>
 			</div>
@@ -134,18 +175,18 @@
 				<div id="enterValueSection" class="col">
 					<div class="alert alert-info" role="alert" id="enteredValueHeader">Enter value here:</div>
 					<div  class="errorMessage" role="alert" id="enteredValueError"></div>
-					<p><input type="text" class="form-control" id="enteredValue" placeholder="Input"></p>
+					<p><input disabled type="text" class="form-control" id="enteredValue" placeholder="Input"></p>
 				</div>
 				<div class="col">
 					<fieldset disabled>
 					<div class="alert alert-info" role="alert" id="resultHeader">Result:</div>
 					<p></p>
-					<p><input type="text" class="form-control" id="enteredValue" placeholder=""></p>
+					<p><input type="text" class="form-control" id="result" placeholder=""></p>
 					</fieldset>
 				</div>
 			</div>
 			
-			<button type="button" id = "convertButton" class="btn btn-info">Go!</button>			
+			<button disabled type="button" id = "convertButton" class="btn btn-info">Go!</button>			
 		</form>
 	</div>	
 
