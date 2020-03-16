@@ -37,95 +37,89 @@
 		result = cups * 48;
 		$("#result").val(result);		
 	}
-	
-	function cupsToTeaspoons(){
-		var cups = $("#enteredValue").val();
-		result =
-		$("#result").val(result);
-	}
 	function cupsToTablespoons(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups * 16;
 		$("#result").val(result);
 	}
 	function teaspoonsToCups(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 48;
 		$("#result").val(result);
 	}
 	function teaspoonsToTablespoons(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 3;
 		$("#result").val(result);
 	}
 	function tablespoonsToCups(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 16;
 		$("#result").val(result);
 	}
 	function tablespoonsToTeaspoons(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons * 3;
 		$("#result").val(result);
 	}
 	function gramsToOunces(){
 		var grams = $("#enteredValue").val();
-		result =
+		result = grams / 28.35;
 		$("#result").val(result);
 	}
 	function gramsToPounds(){
 		var grams = $("#enteredValue").val();
-		result =
+		result = grams / 454;
 		$("#result").val(result);
 	}
 	function ouncesToGrams(){
 		var ounces = $("#enteredValue").val();
-		result =
+		result = ounces * 28.35;
 		$("#result").val(result);
 	}
 	function ouncesToPounds(){
 		var ounces = $("#enteredValue").val();
-		result =
+		result = ounces / 16;
 		$("#result").val(result);
 	}
 	function poundsToGrams(){
 		var pounds = $("#enteredValue").val();
-		result =
+		result = pounds * 454;
 		$("#result").val(result);
 	}
 	function poundsToOunces(){
 		var pounds = $("#enteredValue").val();
-		result =
+		result = pounds * 16;
 		$("#result").val(result);
 	}
 	function gramsToCups(){
 		var grams = $("#enteredValue").val();
-		result =
+		result = grams / 340;
 		$("#result").val(result);
 	}
 	function gramsToTeaspoons(){
 		var grams = $("#enteredValue").val();
-		result =
+		result = grams / 4.26;
 		$("#result").val(result);
 	}
 	function gramsToTablespoons(){
 		var grams = $("#enteredValue").val();
-		result =
+		result = grams /15;
 		$("#result").val(result);
 	}
 	function ouncesToCups(){
 		var ounces = $("#enteredValue").val();
-		result =
+		result = ounces / 8;
 		$("#result").val(result);
 	}
 	function ouncesToTeaspoons(){
 		var ounces = $("#enteredValue").val();
-		result =
+		result = ounces * 6;
 		$("#result").val(result);
 	}
 	function ouncesToTablespoons(){
 		var ounces = $("#enteredValue").val();
-		result =
+		result = ounces * 2;
 		$("#result").val(result);
 	}
 	function poundsToCups(){
@@ -190,47 +184,47 @@
 	}
 	function pintsToQuarts(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints / 2;
 		$("#result").val(result);
 	}
 	function pintsToCups(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints * 2;
 		$("#result").val(result);
 	}
 	function pintsToTeaspoons(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pint * 96;
 		$("#result").val(result);
 	}
 	function pintsToTablespoons(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints * 32;
 		$("#result").val(result);
 	}
 	function pintsToLiters(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints / 2.113;
 		$("#result").val(result);
 	}
 	function pintsToMilliliters(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints * 473;
 		$("#result").val(result);
 	}
 	function quartsToPints(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 2;
 		$("#result").val(result);
 	}
 	function quartsToCups(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 4;
 		$("#result").val(result);
 	}
 	function quartsToTeaspoons(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 192;
 		$("#result").val(result);
 	}
 	function quartsToTablespoons(){
