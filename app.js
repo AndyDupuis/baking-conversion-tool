@@ -93,93 +93,111 @@
 		$("#result").val(result);
 	}
 	function gramsToCups(){
+		var gramsPerCup = $("#ingredient").val();
 		var grams = $("#enteredValue").val();
-		result = grams / 340;
+		result = grams / gramsPerCup;
 		$("#result").val(result);
 	}
 	function gramsToTeaspoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var grams = $("#enteredValue").val();
-		result = grams / 4.26;
+		result = grams / (gramsPerCup/48);
 		$("#result").val(result);
 	}
 	function gramsToTablespoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var grams = $("#enteredValue").val();
-		result = grams /15;
+		result = grams / (gramsPerCup/16);
 		$("#result").val(result);
 	}
 	function ouncesToCups(){
+		var gramsPerCup = $("#ingredient").val();
 		var ounces = $("#enteredValue").val();
-		result = ounces / 8;
+		result = ounces / (gramsPerCup/28.35);
 		$("#result").val(result);
 	}
 	function ouncesToTeaspoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var ounces = $("#enteredValue").val();
-		result = ounces * 6;
+		result = ounces / (gramsPerCup/1361);
 		$("#result").val(result);
 	}
 	function ouncesToTablespoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var ounces = $("#enteredValue").val();
-		result = ounces * 2;
+		result = ounces / (gramsPerCup/454);
 		$("#result").val(result);
 	}
 	function poundsToCups(){
+		var gramsPerCup = $("#ingredient").val();
 		var pounds = $("#enteredValue").val();
-		result =
+		result = pounds / (gramsPerCup/454);
 		$("#result").val(result);
 	}
 	function poundsToTeaspoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var pounds = $("#enteredValue").val();
-		result =
+		result = (pounds / (gramsPerCup/454)) * 48;
 		$("#result").val(result);
 	}
 	function poundsToTablespoons(){
+		var gramsPerCup = $("#ingredient").val();
 		var pounds = $("#enteredValue").val();
-		result =
+		result = (pounds / (gramsPerCup/454)) * 16; 
 		$("#result").val(result);
 	}
 	function cupsToGrams(){
+		var gramsPerCup = $("#ingredient").val();
 		var cups = $("#enteredValue").val();
-		result =
+		result = gramsPerCup * cups;
 		$("#result").val(result);
 	}
 	function cupsToOunces(){
+		var gramsPerCup = $("#ingredient").val();
 		var cups = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup / 28.35) * cups;
 		$("#result").val(result);
 	}
 	function cupsToPounds(){
+		var gramsPerCup = $("#ingredient").val();
 		var cups = $("#enteredValue").val();
-		result =
+		result = (pounds / (gramsPerCup/454)) * cups;
 		$("#result").val(result);
 	}
 	function teaspoonsToGrams(){
+		var gramsPerCup = $("#ingredient").val();
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup / 48) * teaspoons;
 		$("#result").val(result);
 	}
 	function teaspoonsToOunces(){
+		var gramsPerCup = $("#ingredient").val();
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup/1362) * teaspoons;
 		$("#result").val(result);
 	}
 	function teaspoonsToPounds(){
+		var gramsPerCup = $("#ingredient").val();;
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup/21772) * teaspoons;
 		$("#result").val(result);
 	}
 	function tablespoonsToGrams(){
+		var gramsPerCup = $("#ingredient").val();
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup/16) * tablespoons;
 		$("#result").val(result);
 	}
 	function tablespoonsToOunces(){
+		var gramsPerCup = $("#ingredient").val();
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup/454) * tablespoons;
 		$("#result").val(result);
 	}
 	function tablespoonsToPounds(){
+		var gramsPerCup = $("#ingredient").val();
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = (gramsPerCup/7257) * tablespoons;
 		$("#result").val(result);
 	}
 	function pintsToQuarts(){
@@ -229,232 +247,232 @@
 	}
 	function quartsToTablespoons(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 64;
 		$("#result").val(result);
 	}
 	function quartsToLiters(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts / 1.057;
 		$("#result").val(result);
 	}
 	function quartsToMilliliters(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 946
 		$("#result").val(result);
 	}
 	function cupsToPints(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups / 2;
 		$("#result").val(result);
 	}
 	function cupsToQuarts(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups / 4;
 		$("#result").val(result);
 	}
 	function cupsToTeaspoons(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups * 48;
 		$("#result").val(result);
 	}
 	function cupsToTablespoons(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups * 16;
 		$("#result").val(result);
 	}
 	function cupsToLiters(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups / 4.227;
 		$("#result").val(result);
 	}
 	function cupsToMilliliters(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups * 237;
 		$("#result").val(result);
 	}
 	function teaspoonsToPints(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 96;
 		$("#result").val(result);
 	}
 	function teaspoonsToQuarts(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 192;
 		$("#result").val(result);
 	}
 	function teaspoonsToCups(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 48;
 		$("#result").val(result);
 	}
 	function teaspoonsToTablespoons(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 3;
 		$("#result").val(result);
 	}
 	function teaspoonsToLiters(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 203;
 		$("#result").val(result);
 	}
 	function teaspoonsToMilliliters(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons * 4.929;
 		$("#result").val(result);
 	}
 	function tablespoonsToPints(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 32;
 		$("#result").val(result);
 	}
 	function tablespoonsToQuarts(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 64;
 		$("#result").val(result);
 	}
 	function tablespoonsToCups(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 16;
 		$("#result").val(result);
 	}
 	function tablespoonsToTeaspoons(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons * 3;
 		$("#result").val(result);
 	}
 	function tablespoonsToLiters(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 67.628;
 		$("#result").val(result);
 	}
 	function litersToPints(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 2.113;
 		$("#result").val(result);
 	}
 	function litersToQuarts(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 1.057;
 		$("#result").val(result);
 	}
 	function litersToCups(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 4.227;
 		$("#result").val(result);
 	}
 	function litersToTeaspoons(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 203;
 		$("#result").val(result);
 	}
 	function litersToTablespoons(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 67.628;
 		$("#result").val(result);
 	}
 	function litersToMilliliters(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 1000; 
 		$("#result").val(result);
 	}
 	function millilitersToPints(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 473;
 		$("#result").val(result);
 	}
 	function millilitersToQuarts(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 946;
 		$("#result").val(result);
 	}
 	function millilitersToCups(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 237; 
 		$("#result").val(result);
 	}
 	function millilitersToTeaspoons(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 4.929;
 		$("#result").val(result);
 	}
 	function millilitersToTablespoons(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 14.787;
 		$("#result").val(result);
 	}
 	function millilitersToLiters(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 1000; 
 		$("#result").val(result);
 	}
 	function fluidOuncesToPints(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces / 16;
 		$("#result").val(result);
 	}
 	function fluidOuncesToQuarts(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces / 32;
 		$("#result").val(result);
 	}
 	function fluidOuncesToCups(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces / 8;
 		$("#result").val(result);
 	}
 	function fluidOuncesToTeaspoons(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces * 6;
 		$("#result").val(result);
 	}
 	function fluidOuncesToTablespoons(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces * 2;
 		$("#result").val(result);
 	}
 	function fluidOuncesToLiters(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces / 33.814;
 		$("#result").val(result);
 	}
 	function fluidOuncesToMilliliters(){
 		var fluidOunces = $("#enteredValue").val();
-		result =
+		result = fluidOunces * 29.574;
 		$("#result").val(result);
 	}
 	function pintsToFluidOunces(){
 		var pints = $("#enteredValue").val();
-		result =
+		result = pints * 16;
 		$("#result").val(result);
 	}
 	function quartsToFluidOunces(){
 		var quarts = $("#enteredValue").val();
-		result =
+		result = quarts * 32;
 		$("#result").val(result);
 	}
 	function cupsToFluidOunces(){
 		var cups = $("#enteredValue").val();
-		result =
+		result = cups * 8;
 		$("#result").val(result);
 	}
 	function teaspoonsToFluidOunces(){
 		var teaspoons = $("#enteredValue").val();
-		result =
+		result = teaspoons / 6;
 		$("#result").val(result);
 	}
 	function tablespoonsToFluidOunces(){
 		var tablespoons = $("#enteredValue").val();
-		result =
+		result = tablespoons / 2;
 		$("#result").val(result);
 	}
 	function litersToFluidOunces(){
 		var liters = $("#enteredValue").val();
-		result =
+		result = liters * 33.814;
 		$("#result").val(result);
 	}
 	function millilitersToFluidOunces(){
 		var milliliters = $("#enteredValue").val();
-		result =
+		result = milliliters / 29.574;
 		$("#result").val(result);
 	}
 		
@@ -463,8 +481,8 @@
 
 //when an ingredient is chosen from the list, show unit options in convertFrom and convertTo lists based on whether it is a dry or liquid ingredient
 	$("#ingredient").change( function() {
-			filterSelectOptions($("#convertFrom"), "data-attribute", $(this).val());
-			filterSelectOptions($("#convertTo"), "data-attribute", $(this).val());
+			filterSelectOptions($("#convertFrom"), "data-attribute", $(this).attr());
+			filterSelectOptions($("#convertTo"), "data-attribute", $(this).attr());
 		});
 
 
@@ -554,286 +572,195 @@
 		
 		//calculations - dry ingredients
 
-		if ($("#ingredient").val() == "1"){
+		if ($("#ingredient").attr() == "1"){
 			
-			//non-weight
+			
 			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "teaspoons"){
 					cupsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "tablespoons"){
 					cupsToTablespoons();
-			}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "cups"){
 					teaspoonsToCups();
-			}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "tablespoons"){
 					teaspoonsToTablespoons();
-			}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "cups"){
 					tablespoonsToCups();
-			}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "teaspoons"){
 					tablespoonsToTeaspoons();
-			}
-
-			//weight only
-			if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "ounces"){
+			} else if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "ounces"){
 					gramsToOunces();
-				}
-			if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "pounds"){
+			} else if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "pounds"){
 					gramsToPounds();
-				}
-			if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "grams"){
+			} else if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "grams"){
 					ouncesToGrams();
-				}
-			if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "pounds"){
+			} else if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "pounds"){
 					ouncesToPounds();
-				}
-			if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "grams"){
+			} else if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "grams"){
 					poundsToGrams();
-				}
-			if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "ounces"){
+			} else if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "ounces"){
 					poundsToOunces();
-				}
-
-			//non-weight to weight, and vice versa
-			if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "cups"){
 					gramsToCups();
-				}
-			if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "teaspoons"){
 					gramsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "grams" && $("#convertTo").val() == "tablespoons"){
 					gramsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "cups"){
 					ouncesToCups();
-				}
-			if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "teaspoons"){
 					ouncesToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "ounces" && $("#convertTo").val() == "tablespoons"){
 					ouncesToTablespoons();
-				}
-			if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "cups"){
 					poundsToCups();
-				}
-			if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "teaspoons"){
 					poundsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "pounds" && $("#convertTo").val() == "tablespoons"){
 					poundsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "grams"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "grams"){
 					cupsToGrams();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "ounces"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "ounces"){
 					cupsToOunces();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "pounds"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "pounds"){
 					cupsToPounds();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "grams"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "grams"){
 					teaspoonsToGrams();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "ounces"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "ounces"){
 					teaspoonsToOunces();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "pounds"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "pounds"){
 					teaspoonsToPounds();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "grams"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "grams"){
 					tablespoonsToGrams();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "ounces"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "ounces"){
 					tablespoonsToOunces();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "pounds"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "pounds"){
 					tablespoonsToPounds();
-				}
+			} else {
+				// error message here? alert indicating to refresh page?  
+			}
 		}
-			
-
-
-
-
+		
 
 		//calculations - liquid ingredients
 
-		if ($("#ingredient").val() == "2"){
+		if ($("#ingredient").attr() == "2"){
 
-			//non-weight
+			
 			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "quarts"){
 					pintsToQuarts();
-				}
-			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "cups"){
 					pintsToCups();
-				}
-			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "teaspoons"){
 					pintsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "tablespoons"){
 					pintsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "liters"){
 					pintsToLiters();
-				}
-			if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "milliliters"){
 					pintsToMilliliters();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "pints"){
 					quartsToPints();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "cups"){
 					quartsToCups();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "teaspoons"){
 					quartsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "tablespoons"){
 					quartsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "liters"){
 					quartsToLiters();
-				}
-			if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "milliliters"){
 					quartsToMilliliters();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "pints"){
 					cupsToPints();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "quarts"){
 					cupsToQuarts();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "teaspoons"){
 					cupsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "tablespoons"){
 					cupsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "liters"){
 					cupsToLiters();
-				}
-			if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "milliliters"){
 					cupsToMilliliters();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "pints"){
 					teaspoonsToPints();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "quarts"){
 					teaspoonsToQuarts();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "cups"){
 					teaspoonsToCups();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "tablespoons"){
 					teaspoonsToTablespoons();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "liters"){
 					teaspoonsToLiters();
-				}
-			if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "milliliters"){
 					teaspoonsToMilliliters();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "pints"){
 					tablespoonsToPints();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "quarts"){
 					tablespoonsToQuarts();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "cups"){
 					tablespoonsToCups();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "teaspoons"){
 					tablespoonsToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "liters"){
 					tablespoonsToLiters();
-				}
-			if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "milliliters"){
 					tablespoonsToMilliliters();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "pints"){
 					litersToPints();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "quarts"){
 					litersToQuarts();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "cups"){
 					litersToCups();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "teaspoons"){
 					litersToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "tablespoons"){
 					litersToTablespoons();
-				}
-			if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "milliliters"){
 					litersToMilliliters();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "pints"){
 					millilitersToPints();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "quarts"){
 					millilitersToQuarts();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "cups"){
 					millilitersToCups();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "teaspoons"){
 					millilitersToTeaspoons();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "tablespoons"){
 					millilitersToTablespoons();
-				}
-			if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "liters"){
 					millilitersToLiters();
-				}
-			
-			//non-weight to weight, and vice versa
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "pints"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "pints"){
 					fluidOuncesToPints();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "quarts"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "quarts"){
 					fluidOuncesToQuarts();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "cups"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "cups"){
 					fluidOuncesToCups();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "teaspoons"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "teaspoons"){
 					fluidOuncesToTeaspoons();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "tablespoons"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "tablespoons"){
 					fluidOuncesToTablespoons();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "liters"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "liters"){
 					fluidOuncesToLiters();
-				}
-				if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "milliliters"){
+			} else if ($("#convertFrom").val() == "fluidOunces" && $("#convertTo").val() == "milliliters"){
 					fluidOuncesToMilliliters();
-				}
-
-				if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "pints" && $("#convertTo").val() == "fluidOunces"){
 					pintsToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "quarts" && $("#convertTo").val() == "fluidOunces"){
 					quartsToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "cups" && $("#convertTo").val() == "fluidOunces"){
 					cupsToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "teaspoons" && $("#convertTo").val() == "fluidOunces"){
 					teaspoonsToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "tablespoons" && $("#convertTo").val() == "fluidOunces"){
 					tablespoonsToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "liters" && $("#convertTo").val() == "fluidOunces"){
 					litersToFluidOunces();
-				}
-				if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "fluidOunces"){
+			} else if ($("#convertFrom").val() == "milliliters" && $("#convertTo").val() == "fluidOunces"){
 					millilitersToFluidOunces();
-				}
+			} else {
+				// error message here? alert indicating to refresh page?  
+			}
 		}
 
 
