@@ -1,6 +1,4 @@
-.errorMessage {
-			color: red;
-		}
+
 
 		#firstJumbotron {
 			background-image: url('cupcakes.jpg');
@@ -41,11 +39,21 @@
 			background-image: url('measuringCups.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
-			padding-top: 15%;
+			padding-top: 10%;
 			margin: auto;
-			height: 750px;
+			height: 800px;
 			max-width: 1000px;
 			font-weight: bold;
+		}
+
+		.alert-danger {
+			font-weight: normal;
+			padding: 2px;
+		}
+
+		#convertUnitsError {
+			-webkit-column-span: all; /* Chrome, Safari, Opera */
+			column-span: all;
 		}
 		
 		#ingredientHeader{
@@ -68,17 +76,23 @@
 			text-align: center;
 		}
 		
-		.measurementError {
-			display: none;
-		}
-		
 		.row {
 			margin-top: 20px;
 			margin-bottom: 20px;
 		}
 		
+		.liquid {
+			display: none;
+		}
+		
+		.solid {
+			display: none;
+		}
+
+
 		#contactUs {
 			width: 600px;
+			margin: auto;
 			
 		}
 		
