@@ -90,36 +90,36 @@
 					<div class="alert alert-info" role="alert" id="ingredientHeader">First, choose an ingredient:</div>
 					<div  class="errorMessage" role="alert" id="ingredientError"></div>
 					<select id="ingredient" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-					    <option value="">Select your ingredient</option>
-						<option value="1" id="128">All-purpose Flour</option>
-						<option value="1" id="113">Cake Flour</option>
-						<option value="1" id="156">Whole Wheat Flour</option>
-						<option value="1" id="198">Granulated (white) Sugar</option>
-						<option value="1" id="200">Packed Brown Sugar (light or dark)</option>
-						<option value="1" id="120">Confectioner's Sugar</option>
-						<option value="1" id="100">Cocoa Powder</option>
-						<option value="1" id="132">Ground Spices</option>
-						<option value="1" id="175">Chocolate Chips</option>
-						<option value="1" id="100">Shredded Coconut</option>
-						<option value="1" id="273">Salt</option>
-						<option value="1" id="230">Baking Soda</option>
-						<option value="1" id="180">Baking Powder</option>
-						<option value="1" id="225">Butter (solid)</option>
-						<option value="2" id="">Butter (melted)</option>
-						<option value="2" id="">Milk</option>
-						<option value="2" id="">Cream</option>
-						<option value="2" id="">Extracts</option>
-						<option value="2" id="">Water</option>
-						<option value="2" id="">Shortening</option>
-						<option value="2" id="">Vegetable Oil</option>
-						<option value="2" id="">Molasses</option>
-						<option value="2" id="">Honey</option>
-						<option value="2" id="">Syrup</option>
+					    <option class="">Select your ingredient</option>
+						<option id="dry">All-purpose Flour</option>
+						<option id="dry">Cake Flour</option>
+						<option id="dry">Whole Wheat Flour</option>
+						<option id="dry">Granulated (white) Sugar</option>
+						<option id="dry">Packed Brown Sugar (light or dark)</option>
+						<option id="dry">Confectioner's Sugar</option>
+						<option id="dry">Cocoa Powder</option>
+						<option id="dry">Ground Spices</option>
+						<option id="dry">Chocolate Chips</option>
+						<option id="dry">Shredded Coconut</option>
+						<option id="dry">Salt</option>
+						<option id="dry">Baking Soda</option>
+						<option id="dry">Baking Powder</option>
+						<option id="dry">Butter (solid)</option>
+						<option id="liquid">Butter (melted)</option>
+						<option id="liquid">Milk</option>
+						<option id="liquid">Cream</option>
+						<option id="liquid">Extracts</option>
+						<option id="liquid">Water</option>
+						<option id="liquid">Shortening</option>
+						<option id="liquid">Vegetable Oil</option>
+						<option id="liquid">Molasses</option>
+						<option id="liquid">Honey</option>
+						<option id="liquid">Syrup</option>
 				    </select>
 				</div>
 			</div>
 
-			<button type="button" id = "choseIngredient" class="btn btn-info">Ok</button>
+			<button type="button" id = "confirmIngredient" class="btn btn-info">Confirm</button>
 			<button disabled type="button" id = "resetIngredient" class="btn btn-info">Reset</button>
 
 			<div class="row">
@@ -128,20 +128,20 @@
 					<div  class="errorMessage" role="alert" id="convertFromError"></div>
 					<select disabled id="convertFrom" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 					    <option value="">Select your units</option>
-						<option class = "solid" value="grams">Grams</option>
-						<option class = "solid" value="ounces">Ounces</option>
-						<option class = "solid" value="pounds">Pounds</option>
-						<option class = "solid" value="cups">Cups</option>
-						<option class = "solid" value="teaspoons">Teaspoons</option>
-						<option class = "solid" value="tablespoons">Tablespoons</option>
-						<option class = "liquid" value="pints">Pints</option>
-						<option class = "liquid" value="fluidOunces">Fluid Ounces</option>
-						<option class = "liquid" value="quarts">Quarts</option>
-						<option class = "liquid" value="cups">Cups</option>
-						<option class = "liquid" value="teaspoons">Teaspoons</option>
-						<option class = "liquid" value="tablespoons">Tablespoons</option>
-						<option class = "liquid" value="liters">Liters</option>
-						<option class = "liquid" value="milliliters">Milliliters</option>
+						<option disabled id="dry" value="grams">Grams</option>
+						<option disabled id="dry" value="ounces">Ounces</option>
+						<option disabled id="dry" value="pounds">Pounds</option>
+						<option disabled id="dry" value="cups">Cups</option>
+						<option disabled id="dry" value="teaspoons">Teaspoons</option>
+						<option disabled id="dry" value="tablespoons">Tablespoons</option>
+						<option disabled id="liquid" value="pints">Pints</option>
+						<option disabled id="liquid" value="fluidOunces">Fluid Ounces</option>
+						<option disabled id="liquid" value="quarts">Quarts</option>
+						<option disabled id="liquid" value="cups">Cups</option>
+						<option disabled id="liquid" value="teaspoons">Teaspoons</option>
+						<option disabled id="liquid" value="tablespoons">Tablespoons</option>
+						<option disabled id="liquid" value="liters">Liters</option>
+						<option disabled id="liquid" value="milliliters">Milliliters</option>
 				      </select>
 				</div>
 				<div class="col">
@@ -149,20 +149,20 @@
 					<div  class="errorMessage" role="alert" id="convertToError"></div>
 					<select disabled id="convertTo" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
 						<option value="">Select your units</option>
-						<option class = "solid" value="grams">Grams</option>
-						<option class = "solid" value="ounces">Ounces</option>
-						<option class = "solid" value="pounds">Pounds</option>
-						<option class = "solid" value="cups">Cups</option>
-						<option class = "solid" value="teaspoons">Teaspoons</option>
-						<option class = "solid" value="tablespoons">Tablespoons</option>
-						<option class = "liquid" value="pints">Pints</option>
-						<option class = "liquid" value="fluidOunces">Fluid Ounces</option>
-						<option class = "liquid" value="quarts">Quarts</option>
-						<option class = "liquid" value="cups">Cups</option>
-						<option class = "liquid" value="teaspoons">Teaspoons</option>
-						<option class = "liquid" value="tablespoons">Tablespoons</option>
-						<option class = "liquid" value="liters">Liters</option>
-						<option class = "liquid" value="milliliters">Milliliters</option>
+						<option id="dry" value="grams">Grams</option>
+						<option id="dry" value="ounces">Ounces</option>
+						<option id="dry" value="pounds">Pounds</option>
+						<option id="dry" value="cups">Cups</option>
+						<option id="dry" value="teaspoons">Teaspoons</option>
+						<option id="dry" value="tablespoons">Tablespoons</option>
+						<option id="liquid" value="pints">Pints</option>
+						<option id="liquid" value="fluidOunces">Fluid Ounces</option>
+						<option id="liquid" value="quarts">Quarts</option>
+						<option id="liquid" value="cups">Cups</option>
+						<option id="liquid" value="teaspoons">Teaspoons</option>
+						<option id="liquid" value="tablespoons">Tablespoons</option>
+						<option id="liquid" value="liters">Liters</option>
+						<option id="liquid" value="milliliters">Milliliters</option>
 					</select>
 				</div>
 			</div>
