@@ -5,7 +5,7 @@
 
 A simple web app for converting baking measurements. Because measurements differ between liquid and dry ingredients, the calculator will require you to choose your ingredient first, then choose your from and to units, enter a value, then will convert the units for you. 
 
-[Currently published here](https://baking-help.com/)
+[Currently published here](https://andydupuis.github.io/baking-conversion-tool/)
 
 ### Features
 
@@ -17,12 +17,12 @@ A simple web app for converting baking measurements. Because measurements differ
 - form validation on calculator and on contact form
 
 
-# In Progress for MVP: 
-- functional contact page 
-- 
+# Next Steps: 
+- fix contact page (doesn't send currently)
+- Review logic and regression test
 
 # Future Enhancement Ideas: 
-- build a mobile app  
+- build a mobile app version
 
 ```
 
