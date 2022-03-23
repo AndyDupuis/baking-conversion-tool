@@ -1,110 +1,112 @@
+/* -------------------------------------------------------------- 
+	Purpose: CSS Stylesheet for baking conversion site.
+	Created: 2018 
+   -------------------------------------------------------------- */
 
 
-		#firstJumbotron {
-			background-image: url('images/cupcakes.jpg');
-			background-size: cover;
-			background-repeat: no-repeat;
-			padding-top: 7%;
-			margin: 5% auto;
-			height: 750px;
-			max-width: 1000px;
-		}
-		
+#firstJumbotron {
+	background-image: url('images/cupcakes.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 7%;
+	margin: 5% auto;
+	height: 750px;
+	max-width: 1000px;
+}
 
-		
-		#centered {
-			text-align: center;
-			font-weight: bold;
-		}
-		
-		#intro {
-			margin: 0% 5% 5% 5%;
-		}
-		
-		#recipes {
-			margin-left: 10px;
-		}
-		
-		.header {
-			margin: 10% 5% 0% 5%;
-		}
+#centered {
+	text-align: center;
+	font-weight: bold;
+}
 
-		.card-deck {
-			margin-left: 10%;
-			margin-right: 10%;
-			margin-top: 5%;
-		}
-		
-		#measuringCups {
-			background-image: url('images/measuringCups.jpg');
-			background-size: cover;
-			background-repeat: no-repeat;
-			padding-top: 10%;
-			margin: auto;
-			height: 800px;
-			max-width: 1000px;
-			font-weight: bold;
-		}
+#intro {
+	margin: 0% 5% 5% 5%;
+}
 
-		.alert-danger {
-			font-weight: normal;
-			padding: 2px;
-		}
+#recipes {
+	margin-left: 10px;
+}
 
-		#convertUnitsError {
-			-webkit-column-span: all; /* Chrome, Safari, Opera */
-			column-span: all;
-		}
-		
-		#ingredientHeader{
-			width: 28%;
-		}
-		#convertFromHeader {
-			width: 70%;
-		}
-		#convertToHeader {
-			width: 65%;
-		}
-		#enteredValueHeader {
-			width: 45%;
-		}
-		#resultHeader {
-			width: 30%;
-		}
-		
-		#ingredient {
-			text-align: center;
-		}
-		
-		.row {
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-		
-		.liquid {
-			display: none;
-		}
-		
-		.solid {
-			display: none;
-		}
+.header {
+	margin: 10% 5% 0% 5%;
+}
+
+.card-deck {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+}
+
+#measuringCups {
+	background-image: url('images/measuringCups.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 10%;
+	margin: auto;
+	height: 800px;
+	max-width: 1000px;
+	font-weight: bold;
+}
+
+.alert-danger {
+	font-weight: normal;
+	padding: 2px;
+}
+
+#convertUnitsError {
+	-webkit-column-span: all; /* Chrome, Safari, Opera */
+	column-span: all;
+}
+
+#ingredientHeader{
+	width: 28%;
+}
+#convertFromHeader {
+	width: 70%;
+}
+#convertToHeader {
+	width: 65%;
+}
+#enteredValueHeader {
+	width: 45%;
+}
+#resultHeader {
+	width: 30%;
+}
+
+#ingredient {
+	text-align: center;
+}
+
+.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.liquid {
+	display: none;
+}
+
+.solid {
+	display: none;
+}
 
 
-		#contactUs {
-			width: 600px;
-			margin: auto;
-			
-		}
-		
-		form {
-			margin-bottom: 10%;
-			margin-left: 5%;
-		}
-		#successMessage {
-			display: none;
-		}
+#contactUs {
+	width: 600px;
+	margin: auto;
+	
+}
 
-		#home {
-			text-align: center;
-			margin: 20px;
-		}
+form {
+	margin-bottom: 10%;
+	margin-left: 5%;
+}
+#successMessage {
+	display: none;
+}
+
+#home {
+	text-align: center;
+	margin: 20px;
+}
