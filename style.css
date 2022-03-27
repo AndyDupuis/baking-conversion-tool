@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------- 
 	Purpose: CSS Stylesheet for baking conversion site.
-	Created: 2018 
+	Created: 2018, updated to be mobile responsive in March 2022
    -------------------------------------------------------------- */
 
 
@@ -88,21 +88,6 @@
 }
 
 .solid {
-	display: none;
-}
-
-
-#contactUs {
-	width: 600px;
-	margin: auto;
-	
-}
-
-form {
-	margin-bottom: 10%;
-	margin-left: 5%;
-}
-#successMessage {
 	display: none;
 }
 
